@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Aplikasi Simpan Pinjam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="aku.png" width="50" height="50"> 
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="animated-text">Login ke Akun Anda</h1>
+    <p>Masukkan username dan password Anda untuk mengakses fitur aplikasi.</p>
+
+    <!-- Form Login -->
+    <section class="form-container">
+      <form id="formLogin" onsubmit="return redirectToSuccessPage()">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan username Anda..." required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password Anda..." required>
+
+        <button type="submit" class="submit-button">Login</button>
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Aplikasi Simpan Pinjam</p>
+  </footer>
+
+  <script>
+    function redirectToSuccessPage() {
+      // Logika validasi bisa ditambahkan di sini, misalnya memeriksa username dan password
+      window.location.href = "loginsukses.html"; // Redirect ke halaman login berhasil
+      return false; // Mencegah form untuk mengirimkan data
+    }
+  </script>
+</body>
+</html>
