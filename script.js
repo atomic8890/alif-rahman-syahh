@@ -22,5 +22,17 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
     event.preventDefault();
   }
 });
+
+ document.getElementById("formTransaksi").addEventListener("submit", function (event) {
+  const nama = document.getElementById("nama").value;
+  const jumlah = document.getElementById("jumlah").value;
+  const kategori = document.getElementById("kategori").value;
+
+  if (!nama || !jumlah || !kategori) {
+    event.preventDefault(); // Mencegah pindah halaman
+    alert("Semua input harus diisi!");
+  }
+});
+ 
  
  
