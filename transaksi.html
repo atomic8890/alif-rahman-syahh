@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transaksi - Aplikasi Simpan Pinjam</title>
+  <title>Formulir Transaksi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="aku.png" width="50" height="50"> 
+    <img src="aku.png" alt="Logo Aplikasi">
     <nav>
       <ul>
         <li><a href="index.html">Beranda</a></li>
@@ -18,17 +18,11 @@
       </ul>
     </nav>
   </header>
-  
-  <main>
-    <!-- Judul Halaman -->
-    <h1 class="animated-text">Formulir Transaksi</h1>
-    <p>Lengkapi data di bawah untuk mencatat transaksi Anda.</p>
 
-    <!-- Form Transaksi -->
-    <section class="form-container">
-      <form id="formTransaksi"
-	  action =" sukses.html"
-	  method = "POST">
+  <main>
+    <h1 class="animated-text">Formulir Transaksi</h1>
+    <div class="form-container">
+      <form id="formTransaksi" action="sukses.html" method="POST">
         <label for="nama">Nama Transaksi</label>
         <input type="text" id="nama" name="nama" placeholder="Masukkan nama transaksi..." required>
 
@@ -44,13 +38,11 @@
 
         <button type="submit" class="submit-button">Simpan Transaksi</button>
       </form>
-    </section>
+    </div>
   </main>
-  
+
   <footer>
     <p>&copy; 2024 Aplikasi Simpan Pinjam</p>
   </footer>
-  <script src="script.js"></script>
-  
 </body>
 </html>
